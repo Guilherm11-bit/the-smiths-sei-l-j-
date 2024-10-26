@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="styleaudio.css">
+</head>
+<body>
+    <div class="audio-player">
+        <audio id="audio" src="audio-file-1.mp3"></audio>  
+       
+        <button id="play-pause">toque</button>
+        <button id="jump">pule 10s</button>
+        <input type="range" id="seek-bar" value="0">
+        <span id="current-time">0:00</span>
+        <span>/</span>
+        <span id="duration">0:00</span>
+        
+        <h2>Track List</h2>
+        <ul id="track-list">
+            <li><button class="track" data-src="audio-file-1.mp3">Asleep</button></li>
+            <li><button class="track" data-src="audio-file-2.mp3">Bigmouth Strikes Again</button></li>
+            <li><button class="track" data-src="audio-file-3.mp3">Back to the Old House</button></li>
+        </ul>
+    </div>
+
+    <a href="index.html"><button>Voltar para a Página Principal</button></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
